@@ -1,6 +1,6 @@
 {
-    "name": "socialiteproviders/naver",
-    "description": "Naver OAuth2 Provider for Laravel Socialite",
+    "name": "socialiteproviders/kakao",
+    "description": "Kakao OAuth2 Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [{
         "name": "Doojin So",
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SocialiteProviders\\Naver\\": "src/"
+            "SocialiteProviders\\Kakao\\": "src/"
         }
     }
 }
