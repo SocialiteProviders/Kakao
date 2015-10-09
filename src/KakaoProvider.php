@@ -71,7 +71,7 @@ class KakaoProvider extends AbstractProvider implements ProviderInterface
     protected function getUserByToken($token)
     {
         $response = $this->getHttpClient()->request('POST', 'https://kapi.kakao.com/v1/user/me', [
-            'headers' => ['Authorization' => 'Bearer '.$token,],
+            'headers' => ['Authorization' => 'Bearer '.$token],
         ]);
 
         return json_decode($response->getBody(), true);
