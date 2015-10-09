@@ -88,7 +88,7 @@ class KakaoProvider extends AbstractProvider implements ProviderInterface
     {
         return (new User())->setRaw($user)->map([
             'id' => $user['id'], 'nickname' => null, 'name' => null, 'email' => null,
-            'avatar' => $user['properties']['profile_image']],
+            'avatar' => $user['properties']['profile_image'],
         ]);
     }
 }
